@@ -1,0 +1,122 @@
+/***************************
+colors 
+https://color.adobe.com/This-Green-color-theme-7853105/edit/?copy=true&base=2&rule=Analogous&selected=3&name=Copy%20of%20This%20Green&mode=hsv&rgbvalues=0.012209825434895618,0.15999999999999998,0.12779802971336823,0.74,1,0.869763748611449,0.056840134035643954,0.45,0.14179115851526303,0.3126507951183441,0.48,0.2976,0.4747468227971411,1,0.07631140896809763&swatchOrder=0,1,2,3,4
+
+ Color scheme:
+  dark green: #032921;
+light green: #BDFFDE;
+medium green: #0E7324;
+dark green: #507A4C;
+light green: #79FF13;
+***************************/
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Open+Sans:400,700');
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    color: #032921;
+}
+* {
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+h1,h2,h3,h4{
+    font-family: 'Libre Baskerville', , 'Times', 'Times New Roman', serif;
+}
+/*color changes*/
+.nav-green {
+    background-color: #BDFFDE;
+    color: #032921;
+}
+
+.btn-green {
+    background-color: #032921;
+    border:3px solid #032921;
+    transition: fill 0.2s;
+}
+.btn-green:hover ,
+.btn-green:active {
+    background-color: #0E7324;
+    border:3px solid #FAFAFA;
+   
+}
+.jumbotron-title {
+    background-image: url("../img/pond.jpg");
+    background-size: cover;
+    display: table-cell;
+    height: 96vh;
+    width: 100vw;
+    vertical-align: middle;
+}
+.jumbotron-light {
+    background-color: #FAFAFA;
+    color: #0E7324;
+}
+.jumbotron-dark {
+    color: #FAFAFA;
+    background-color: #0E7324;
+}
+.container-title {
+    background-color: #0E7324;
+    color: #FAFAFA;
+    box-shadow: 0 2px 6px rgba(126, 132, 122, 0.38);
+}
+/*footer and footer position*/
+.wrap {
+    min-height: 94vh;
+    height: auto !important;
+    margin: 0 auto -12rem;
+}
+footer,
+.push{
+    height: 12rem;
+}
+footer {
+    line-height: 3rem;
+    background-color: #032921;
+    color: #FAFAFA;
+}
+/*icons*/
+.iconic {
+    fill: #FAFAFA;
+    transition: fill 0.3s;
+}
+.iconic:hover , 
+.iconic:active {
+  fill: #79FF13;
+}
+
+@media (min-width: 544px) {
+    /*bootstrap 4 card-columns bug fix*/
+    .card-columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+
+@media (min-width: 768px) {
+    /*bootstrap 4 card-columns bug fix*/
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+    
+    .jumbotron-title {
+        background-image: url("../img/pond.jpg");
+    }
+}
+
+@media (min-width: 992px) {
+    /*bootstrap 4 card-columns bug fix*/
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+    
+    .jumbotron-title {
+        background-image: url("../img/pond.jpg");
+    }
+}
